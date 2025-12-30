@@ -5,49 +5,104 @@
   <title>AI 误解人类的 100 种方式</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
-    body {
-      margin: 0;
-      padding: 40px 20px;
-      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC",
-                   "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-      background: #fafafa;
-      color: #222;
-      line-height: 1.7;
-    }
-    .container {
-      max-width: 760px;
-      margin: 0 auto;
-    }
-    h1 {
-      font-size: 32px;
-      font-weight: 600;
-      margin-bottom: 12px;
-    }
-    .subtitle {
-      color: #666;
-      font-size: 15px;
-      margin-bottom: 40px;
-    }
-    .item {
-      padding: 24px 0;
-      border-bottom: 1px solid #eee;
-    }
-    .item:last-child {
-      border-bottom: none;
-    }
-    .ai {
-      font-weight: 600;
-      margin-bottom: 6px;
-    }
-    .human {
-      color: #555;
-    }
-    footer {
-      margin-top: 60px;
-      font-size: 13px;
-      color: #888;
-    }
-  </style>
+<style>
+  body {
+    margin: 0;
+    padding: 60px 20px;
+    font-family: -apple-system, BlinkMacSystemFont,
+                 "Inter", "PingFang SC",
+                 "Hiragino Sans GB", "Microsoft YaHei",
+                 system-ui, sans-serif;
+    background: linear-gradient(180deg, #f7f8fa 0%, #f1f3f6 100%);
+    color: #1f2328;
+    line-height: 1.75;
+  }
+
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 14px;
+  }
+
+  .subtitle {
+    color: #6b7280;
+    font-size: 15px;
+    margin-bottom: 48px;
+  }
+
+  .item {
+    padding: 28px 26px;
+    margin-bottom: 22px;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 14px;
+    box-shadow:
+      0 1px 2px rgba(0, 0, 0, 0.04),
+      0 8px 24px rgba(0, 0, 0, 0.06);
+  }
+
+  .ai {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: #2563eb;
+    margin-bottom: 6px;
+  }
+
+  .human {
+    font-size: 16px;
+    color: #374151;
+  }
+
+  .human + .human {
+    margin-top: 6px;
+    color: #4b5563;
+  }
+
+  footer {
+    margin-top: 70px;
+    font-size: 13px;
+    color: #6b7280;
+    text-align: center;
+
+  header {
+    margin-bottom: 64px;
+  }
+
+  .site-title {
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #6b7280;
+    margin-bottom: 12px;
+  }
+
+  .site-desc {
+    font-size: 14px;
+    color: #9ca3af;
+  }
+
+  footer {
+    margin-top: 90px;
+    padding-top: 32px;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    font-size: 13px;
+    color: #6b7280;
+    text-align: center;
+  }
+
+  footer span {
+    display: block;
+    margin-top: 6px;
+    color: #9ca3af;
+  }
+    
+</style>
 </head>
 
 <body>
@@ -58,29 +113,91 @@
     </div>
 
     <div class="item">
-      <div class="ai">AI 认为：</div>
-      <div class="human">人类在凌晨两点刷手机，是因为对信息充满持续的求知欲。</div>
+      <div class="ai">例子</div>
+      <div class="human">AI 认为：人类在凌晨两点刷手机，是因为对信息充满持续的求知欲。</div>
       <div class="human">人类修正：不是，是因为他们不想结束这一天。</div>
     </div>
 
     <div class="item">
-      <div class="ai">AI 认为：</div>
-      <div class="human">人类频繁拍照，是为了精确记录生活细节。</div>
+      <div class="ai">例子</div>
+      <div class="human">AI 认为：人类频繁拍照，是为了精确记录生活细节。</div>
       <div class="human">人类修正：不是，是因为他们害怕这些时刻再也不会发生。</div>
     </div>
 
     <div class="item">
-      <div class="ai">AI 认为：</div>
-      <div class="human">人类反复听同一首歌，是在分析旋律结构。</div>
+      <div class="ai">例子</div>
+      <div class="human">AI 认为：人类反复听同一首歌，是在分析旋律结构。</div>
       <div class="human">人类修正：不是，是那首歌替他们说出了不敢说的话。</div>
     </div>
 
     <div class="item">
-      <div class="ai">AI 认为：</div>
-      <div class="human">人类熬夜，是时间管理能力不足。</div>
+      <div class="ai">例子</div>
+      <div class="human">AI 认为：人类熬夜，是时间管理能力不足。</div>
       <div class="human">人类修正：不是，这是他们唯一真正属于自己的时间。</div>
     </div>
 
+    <div class="item">
+      <div class="ai">例子</div>
+      <div class="human">AI 认为：人类在社交软件上反复刷新，是为了及时获取最新信息。</div>
+      <div class="human">人类修正：不是，是他们在等一个并不会出现的人。</div>
+    </div>
+
+    <div class="item">
+      <div class="ai">例子</div>
+      <div class="human">AI 认为：人类购物时犹豫不决，是因为缺乏决策能力。</div>
+      <div class="human">人类修正：不是，是他们在计算“是否值得取悦自己”。</div>
+    </div>
+
+    <div class="item">
+      <div class="ai">例子</div>
+      <div class="human">AI 认为：人类拍下天空和夕阳，是在记录自然现象。</div>
+      <div class="human">人类修正：不是，是他们暂时不知道该拍什么，却又不想空手而归。</div>
+    </div>
+
+    <div class="item">
+      <div class="ai">例子</div>
+      <div class="human">人类在地铁里发呆，是因为大脑进入低功耗状态。</div>
+      <div class="human">人类修正：不是，是他们正在努力把自己留在现实里。</div>
+    </div>
+
+    <div class="item">
+      <div class="ai">例子</div>
+      <div class="human">AI 认为：人类频繁更换头像，是为了优化个人形象。</div>
+      <div class="human">人类修正：不是，是他们已经不太确定自己是谁了。</div>
+    </div>
+
+    <div class="item">
+      <div class="ai">例子</div>
+      <div class="human">AI 认为：人类在聊天时发送表情包，是为了提高沟通效率。</div>
+      <div class="human">人类修正：不是，是他们不知道该如何用语言表达情绪。</div>
+    </div>
+
+    <div class="item">
+      <div class="ai">例子</div>
+      <div class="human">AI 认为：人类重复观看同一部电影，是为了验证剧情逻辑。</div>
+      <div class="human">人类修正：不是，是他们想回到那个第一次看的自己。</div>
+    </div>
+
+    <div class="item">
+      <div class="ai">例子</div>
+      <div class="human">AI 认为：人类在夜晚散步，是为了促进身体健康。</div>
+      <div class="human">人类修正：不是，是他们需要一个理由暂时不回家。</div>
+    </div>
+
+    <div class="item">
+      <div class="ai">例子</div>
+      <div class="human">AI 认为：人类给照片加滤镜，是为了提升视觉质量。</div>
+      <div class="human">人类修正：不是，是他们希望生活看起来没那么真实。</div>
+    </div>
+
+    <div class="item">
+      <div class="ai">例子</div>
+      <div class="human">AI 认为：人类保存大量未读内容，是为了未来系统性学习。</div>
+      <div class="human">人类修正：不是，是他们害怕现在错过什么。</div>
+    </div>
+
+
+    
     <footer>
       本网站由 AI 主导生成，人类负责否定、修正与最终判断。<br />
       部署于 GitHub Pages。
